@@ -1,0 +1,37 @@
+{
+  "name": "formulahub-backend",
+  "version": "1.0.0",
+  "description": "FormulaHub API Backend - FastAPI with Cloudflare Workers support",
+  "main": "main.py",
+  "scripts": {
+    "dev": "python main.py",
+    "start": "uvicorn main:app --host 0.0.0.0 --port 8000",
+    "deploy": "./deploy.sh",
+    "deploy:staging": "wrangler deploy --env staging",
+    "deploy:production": "wrangler deploy --env production",
+    "test": "python -m pytest",
+    "lint": "flake8 .",
+    "format": "black .",
+    "install:wrangler": "npm install -g wrangler"
+  },
+  "keywords": [
+    "fastapi",
+    "formula1",
+    "f1",
+    "api",
+    "cloudflare-workers",
+    "python"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/formulahub-backend.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

@@ -1,0 +1,2 @@
+# This file ensures the static directory is tracked by git
+# and deployed to Render, preventing the "Directory does not exist" error

@@ -21,7 +21,8 @@ app.add_middleware(
         "http://localhost:5173", 
         "http://localhost:3000", 
         "http://127.0.0.1:5173",
-        "https://formulahub.vercel.app",  # Vercel frontend
+        "https://formula-hub-ashy.vercel.app",  # Your actual Vercel domain
+        "https://formulahub.vercel.app",  # Alternative Vercel domain
         "https://*.vercel.app"  # Any Vercel subdomain
     ],
     allow_credentials=True,
